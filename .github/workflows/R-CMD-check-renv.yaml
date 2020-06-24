@@ -79,10 +79,14 @@ jobs:
         env:
           _R_CHECK_CRAN_INCOMING_: false
         run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
           renv::install("rcmdcheck")
-          rcmdcheck::rcmdcheck(args = c("--no-manual", "--as-cran"), error_on = "warning", check_dir = "check")
+          rcmdcheck::rcmdcheck(
+            args = c("--no-manual", "--as-cran"),
+            error_on = "warning",
+            check_dir = "check",
+            libpath = "~/.local/share/renv"
+          )
         shell: Rscript {0}
 
       - name: Show testthat output
