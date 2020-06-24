@@ -16,7 +16,7 @@ status](https://github.com/UBESP-DCTV/maparpav/workflows/lint/badge.svg)](https:
 [![R build
 status](https://github.com/UBESP-DCTV/maparpav/workflows/R-CDM-check/badge.svg)](https://github.com/UBESP-DCTV/maparpav/actions)
 [![R build
-status](https://github.com/UBESP-DCTV/maparpav/workflows/covr/badge.svg)](https://github.com/UBESP-DCTV/maparpav/actions)
+status](https://github.com/UBESP-DCTV/maparpav/workflows/test-coverage/badge.svg)](https://github.com/UBESP-DCTV/maparpav/actions)
 <!-- badges: end -->
 
 Few times a day, ARPAV update map data on a site dedicated to UBEP, ie
