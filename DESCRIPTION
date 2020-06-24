@@ -1,5 +1,5 @@
 Package: maparpav
-Title: What the Package Does (One Line, Title Case)
+Title: Retreieve map from ARPAV
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Corrado",
@@ -7,11 +7,19 @@ Authors@R:
            role = c("aut", "cre", "cph"),
            email = "corrado.lanera@gmail.com",
            comment = c(ORCID = "0000-0002-0520-7428"))
-Description: What the package does (one paragraph).
+Description: Few times a day, ARPAV update map data on a site
+    dedicated to UBEP, ie https://www.arpa.veneto.it/inquinanti/unipd/.
+    Here there are the utilities and function to automatically download
+    those data.
 License: GPL-3
+Suggests: 
+    spelling,
+    testthat
 Encoding: UTF-8
+Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
-Suggests: 
-    testthat
+Imports: 
+    lubridate,
+    stringr

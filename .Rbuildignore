@@ -3,3 +3,7 @@
 ^maparpav\.Rproj$
 ^\.Rproj\.user$
 ^dev$
+^LICENSE\.md$
+^README\.Rmd$
+^CODE_OF_CONDUCT\.md$
+^log$
