@@ -23,3 +23,5 @@ RoxygenNote: 7.1.0
 Imports: 
     lubridate,
     stringr
+URL: https://github.com/UBESP-DCTV/maparpav
+BugReports: https://github.com/UBESP-DCTV/maparpav/issues
