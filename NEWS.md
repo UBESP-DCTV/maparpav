@@ -1,5 +1,14 @@
 # maparpav 0.0.0.9000
 
+* Created `dev/02-development.R` to keep track of the development
+process.
+* Added support for `%>%` (pipe).
+* Added full tidy's CIs powered by GitHub Actions.
+* Added automatic lint checks powered by `{lintr}` package and GitHub
+  Actions.
+* Added WEBsite documentation powered by `{pkgdown}`, automatically
+  deployed by a GitHub Action. Including a Badge-button for the `README`
+  file.
 * Activate GitHub support, including Contrib, issue template, support,
   and CoC.
 * Initialize git repo

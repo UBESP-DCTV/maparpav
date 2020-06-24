@@ -13,6 +13,14 @@ Few times a day, ARPAV update map data on a site
     Here there are the utilities and function to automatically download
     those data.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/UBESP-DCTV/maparpav}
+  \item Report bugs at \url{https://github.com/UBESP-DCTV/maparpav/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Corrado Lanera \email{corrado.lanera@gmail.com} (\href{https://orcid.org/0000-0002-0520-7428}{ORCID}) [copyright holder]
 
