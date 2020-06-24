@@ -33,7 +33,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-renv-
 
-     - name: Install dependencies
+      - name: Install dependencies
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()

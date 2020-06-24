@@ -44,7 +44,7 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
-     - name: Cache R packages
+      - name: Cache R packages
         uses: actions/cache@v2
         with:
           path: ${{ env.RENV_PATHS_ROOT }}
@@ -61,7 +61,7 @@ jobs:
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
           sudo -s eval "$sysreqs"
 
-     - name: Install dependencies
+      - name: Install dependencies
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore()
