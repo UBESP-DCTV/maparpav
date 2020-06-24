@@ -84,13 +84,13 @@ jobs:
           rcmdcheck::rcmdcheck(
             args = c("--no-manual", "--as-cran"),
             error_on = "warning",
-            check_dir = "check"
+            check_dir = "~/check"
           )
         shell: Rscript {0}
 
       - name: Show testthat output
         if: always()
-        run: find check -name 'testthat.Rout*' -exec cat '{}' \; || true
+        run: find ~/check -name 'testthat.Rout*' -exec cat '{}' \; || true
         shell: bash
 
       - name: Upload check results
@@ -98,4 +98,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
-          path: check
+          path: ~/check
