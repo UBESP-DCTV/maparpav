@@ -192,6 +192,19 @@ devtools::check()
 
 
 #'
+#' Activate Git/GitHub
+#' ====================================================================
+#'
+usethis::use_git()
+usethis::git_vaccinate()
+usethis::use_github("UBESP-DCTV", private = TRUE)
+usethis::use_tidy_github()
+
+
+
+
+
+#'
 #' Activate {renv} for reproducibility
 #' ====================================================================
 #'
@@ -204,19 +217,6 @@ renv::status() # just to check
 
 
 
-
-
-
-
-
-#'
-#' Activate Git/GitHub
-#' ====================================================================
-#'
-usethis::use_git()
-usethis::git_vaccinate()
-usethis::use_github("UBESP-DCTV", private = TRUE)
-usethis::use_tidy_github()
 
 
 
@@ -274,12 +274,12 @@ usethis::use_github_actions_badge("lint")
 usethis::use_github_action(
   url = "https://raw.githubusercontent.com/CorradoLanera/actions/master/R-CMD-check-renv.yaml"
 )
-usethis::use_github_actions_badge("R-CDM-check")
+usethis::use_github_actions_badge("R-CMD-check")
 
 usethis::use_github_action(
   url = "https://raw.githubusercontent.com/CorradoLanera/actions/master/covr-renv.yaml"
 )
-usethis::use_github_actions_badge("covr")
+usethis::use_github_actions_badge("test-coverage")
 
 
 

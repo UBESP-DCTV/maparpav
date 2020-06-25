@@ -14,8 +14,6 @@ status](https://github.com/UBESP-DCTV/maparpav/workflows/pkgdown/badge.svg)](htt
 [![R build
 status](https://github.com/UBESP-DCTV/maparpav/workflows/lint/badge.svg)](https://github.com/UBESP-DCTV/maparpav/actions)
 [![R build
-status](https://github.com/UBESP-DCTV/maparpav/workflows/R-CDM-check/badge.svg)](https://github.com/UBESP-DCTV/maparpav/actions)
-[![R build
 status](https://github.com/UBESP-DCTV/maparpav/workflows/test-coverage/badge.svg)](https://github.com/UBESP-DCTV/maparpav/actions)
 <!-- badges: end -->
 
