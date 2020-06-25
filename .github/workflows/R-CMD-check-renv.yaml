@@ -55,6 +55,7 @@ jobs:
       - name: Install dependencies
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::rebuild()
           renv::restore()
         shell: Rscript {0}
 
