@@ -52,13 +52,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-renv-
 
-      - name: Install dependencies
-        run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::rebuild()
-          renv::restore()
-        shell: Rscript {0}
-
       - name: Install system dependencies
         if: runner.os == 'Linux'
         env:
@@ -67,6 +60,13 @@ jobs:
           Rscript -e "renv::install('r-hub/sysreqs')"
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
           sudo -s eval "$sysreqs"
+
+      - name: Install dependencies
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::rebuild()
+          renv::restore()
+        shell: Rscript {0}
 
       - name: Session info
         run: |
